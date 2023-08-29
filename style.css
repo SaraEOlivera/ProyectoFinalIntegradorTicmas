@@ -13,7 +13,21 @@ body {
 header {
     width: 100%;
     height: 300px;
-    background-color: aqua;
+    background: linear-gradient(270deg, #518e7e, #3ba589, #69d7dd);
+    background-size: 600% 600%;
+    -webkit-animation: fondo 5s ease infinite;
+    animation: fondo 30s ease infinite;
+}
+
+@-webkit-keyframes fondo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes fondo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .contenedor-header {
@@ -30,7 +44,13 @@ header {
     height: 120px;
 }
 
-.contenedor-header h2 {
+.contenedor-header .header-texto h2 {
     text-align: center;
-}
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    }
+
+
+
+
 
