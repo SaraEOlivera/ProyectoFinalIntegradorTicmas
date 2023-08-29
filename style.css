@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1200px;
+    margin: auto;
+
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+}
+
+.contenedor-header {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.header-foto img {
+    border-radius: 50%;
+    height: 120px;
+}
+
+.contenedor-header h2 {
+    text-align: center;
+}
+
