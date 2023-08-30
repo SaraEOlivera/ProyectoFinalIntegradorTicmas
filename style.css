@@ -149,24 +149,58 @@ section .contenedor{
     padding: 35px;
 }
 
-.subtitulo-seccion{
-    font-size: 1.3rem;
-}
-
 .curso{
     padding-bottom: 50px;
 }
 
+.subtitulo-seccion{
+    font-size: 1.3rem;
+}
 
+.formacion-contenido {
+    display: flex;
+}
 
+.formacion-contenido i {
+    padding-left: 25px;
+    color: #272626;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 
+.img-section {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
 
+.flecha-arriba {
+    text-align: right;
+    padding: 25px;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #272626;
+}
 
 footer {
     width: 100%;
     height: 200px;
-    background-color: yellow;
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #518e7e;
+}
+
+.footer-iconos i{
+    font-size: 2rem;
+    padding: 20px;
+    color: #272626;
+}
+
+.footer-texto {
+    font-size: 1.2rem;
+    padding: 20px;
 }
 
 
