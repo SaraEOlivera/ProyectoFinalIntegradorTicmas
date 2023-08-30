@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #d3d3d317;
+    scroll-behavior: smooth;
+}
+
 body {
     width: 1200px;
     margin: auto;
@@ -49,25 +54,22 @@ header {
     font-size: 3rem;
 }
 
-.header-boton .oscuro {
-    display: none;
-}
-
-.header-boton .claro {
-    font-size: 25px;
-    cursor: pointer;
-    color: #403f3f;
+.header-boton {
+    border: 2px solid #272626;
+    border-radius: 100%;
+    width: 45px;
+    height: 40px;
     transition: ease 2s;
+    background-color: transparent;
 }
 
-.header-boton .claro:hover {
+.header-boton i{
     color: #272626;
-    font-size: 28px;
 }
 
 main {
     height: auto;
-    background-color: #d3d3d317;
+
 }
 
 section {
@@ -79,7 +81,7 @@ aside {
     width: 30%;
     float: left;
     border-right: 2px solid #3ba589;
-    height: 2000px
+    height: 2000px;
 }
 
 aside h3, .titulo-seccion {
@@ -149,7 +151,7 @@ section .contenedor{
     padding: 35px;
 }
 
-.curso{
+.curso {
     padding-bottom: 50px;
 }
 
@@ -161,24 +163,24 @@ section .contenedor{
     display: flex;
 }
 
+.formacion-contenido .desplegable {
+    border: 2px solid #46b496;
+    border-radius: 100%;
+    width: 45px;
+    height: 40px;
+    transition: ease 2s;
+    background-color: transparent;
+    margin-left: 25px;
+}    
+
 .formacion-contenido i {
-    padding-left: 25px;
-    color: #272626;
+    color: #46b496;
     font-size: 1.2rem;
-    cursor: pointer;
 }
 
 .img-section {
     filter: brightness(1.1);
     mix-blend-mode: multiply;
-}
-
-.flecha-arriba {
-    text-align: right;
-    padding: 25px;
-    font-size: 3rem;
-    cursor: pointer;
-    color: #272626;
 }
 
 footer {
@@ -201,6 +203,21 @@ footer {
 .footer-texto {
     font-size: 1.2rem;
     padding: 20px;
+}
+
+.flecha-arriba {
+    position: fixed;
+    bottom: 60px;
+    right: 70px;
+    border: 2px solid #272626;
+    border-radius: 100%;
+    height: 50px;
+    width:60px;
+    background-color: #518e7e;
+}
+
+.flecha-arriba i {
+    font-size: 26px;
 }
 
 
