@@ -66,7 +66,7 @@ header {
 }
 
 main {
-    height: 800px;
+    height: auto;
     background-color: #d3d3d317;
 }
 
@@ -79,10 +79,10 @@ aside {
     width: 30%;
     float: left;
     border-right: 2px solid #3ba589;
-    height: 800px;
+    height: 2000px
 }
 
-aside h3 {
+aside h3, .titulo-seccion {
     text-align: center;
     padding: 25px;
     font-size: 2rem;
@@ -104,7 +104,6 @@ aside h3 {
 .contenedor-contacto i {
     font-size: 1.2rem;
     padding-right: 7px;
-    /* color: #0f0f0f; */
     color: #3ba589;
 }
 
@@ -128,10 +127,36 @@ aside h3 {
 }
 
 .progress .barra .texto-barra {
-    color: rgb(211, 209, 209);
+    color: #605d5d;
     font-size: 1rem;
     padding-top: 10px;
 }
+
+/* Seccion Formacion */
+
+section {
+    padding: 32px;
+    margin: auto;
+}
+
+section .titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+}
+
+section .contenedor{
+    margin: 35px;
+    padding: 35px;
+}
+
+.subtitulo-seccion{
+    font-size: 1.3rem;
+}
+
+.curso{
+    padding-bottom: 50px;
+}
+
 
 
 
