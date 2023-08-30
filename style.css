@@ -7,7 +7,6 @@
 body {
     width: 1200px;
     margin: auto;
-
 }
 
 header {
@@ -16,7 +15,7 @@ header {
     background: linear-gradient(270deg, #518e7e, #3ba589, #69d7dd);
     background-size: 600% 600%;
     -webkit-animation: fondo 5s ease infinite;
-    animation: fondo 30s ease infinite;
+    animation: fondo 10s ease infinite;
 }
 
 @-webkit-keyframes fondo {
@@ -48,7 +47,152 @@ header {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 3rem;
+}
+
+.header-boton .oscuro {
+    display: none;
+}
+
+.header-boton .claro {
+    font-size: 25px;
+    cursor: pointer;
+    color: #403f3f;
+    transition: ease 2s;
+}
+
+.header-boton .claro:hover {
+    color: #272626;
+    font-size: 28px;
+}
+
+main {
+    height: 800px;
+    background-color: #d3d3d317;
+}
+
+section {
+    width: 70%;
+    float: right;
+}
+
+aside {
+    width: 30%;
+    float: left;
+    border-right: 2px solid #3ba589;
+    height: 800px;
+}
+
+aside h3 {
+    text-align: center;
+    padding: 25px;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.contenedor-contacto p {
+    margin: 10px 30px;
+    font-size: 1.2rem;
+    color: #272626;
+}
+
+.contenedor-contacto i {
+    font-size: 1.2rem;
+    padding-right: 7px;
+    /* color: #0f0f0f; */
+    color: #3ba589;
+}
+
+.contenedor-skills {
+    width: 300px;
+    height:320px;
+    margin: auto;
+    border: 2px solid #3ba589;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.contenedor-skills .progress {
+    margin: 15px;
+    height: 25px;
+    background-color: #c6c3c317;
+}
+
+.progress .barra {
+    background-color: #46b496;
+}
+
+.progress .barra .texto-barra {
+    color: rgb(211, 209, 209);
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: yellow;
+    float: left;
+}
+
+
+/* Responsive Area */
+@media all and (min-width: 600px) and (max-width: 1200px){
+    
+    body {
+        width: 580px;
     }
+    
+    header {
+        height: 200px;
+    }
+    
+    .contenedor-header {
+        height: 200px;
+        padding: 1rem;
+    }
+    
+    .header-foto img {
+        height: 100px;
+    }
+    
+    .contenedor-header .header-texto h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media all and (max-width: 599px){
+    body {
+        width: 100%;
+    }
+    
+    header {
+        height: 200px;
+    }
+    
+    .contenedor-header {
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+    }
+    
+    .header-foto img {
+        height: 100px;
+    }
+    
+    .contenedor-header .header-texto h2 {
+        font-size: 1.5rem;
+    }
+}
 
 
 
