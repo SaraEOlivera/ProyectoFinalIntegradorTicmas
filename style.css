@@ -222,41 +222,19 @@ footer {
 
 
 /* Responsive Area */
-@media all and (min-width: 600px) and (max-width: 1200px){
-    
-    body {
-        width: 580px;
-    }
-    
-    header {
-        height: 200px;
-    }
-    
-    .contenedor-header {
-        height: 200px;
-        padding: 1rem;
-    }
-    
-    .header-foto img {
-        height: 100px;
-    }
-    
-    .contenedor-header .header-texto h2 {
-        font-size: 1.7rem;
-    }
-}
+@media all and (min-width: 768px) and (max-width: 1200px){
 
-@media all and (max-width: 599px){
     body {
-        width: 100%;
+        width: 750px;
     }
     
     header {
+        width: 750px;
         height: 200px;
     }
     
     .contenedor-header {
-        width: 100%;
+        width: 750px;
         height: 200px;
         padding: 1rem;
     }
@@ -266,9 +244,74 @@ footer {
     }
     
     .contenedor-header .header-texto h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
+    
+    main {
+        height: auto;
+    }
+    
+    section {
+        width: 60%;
+    }
+
+    aside {
+        width: 40%;
+        height: 2100px;
+    }
+    
+    aside h3 {
+        font-size: 1.8rem;
+        padding-top: 55px;
+    }
+    
+    .contenedor-contacto {
+        padding-bottom: 30px;
+    }
+    
+    .contenedor-contacto p {
+        margin: 10px 20px;
+    }
+    
+    .contenedor-skills {
+        width: 250px;
+        height:350px;
+    }
+    
+    .contenedor-skills .progress {
+        margin: 25px;
+    }
+    
+    /* Seccion Formacion */
+    
+    section {
+        padding: 25px;
+    }
+    
+    section .contenedor{
+        margin: 0px;
+        padding: 5px;
+    }
+    
+    .curso {
+        padding-bottom: 100px;
+    }
+    
+    .subtitulo-seccion{
+        font-size: 1.2rem;
+    }
+
+    .formacion-contenido h4 {
+        font-size: 1.2rem;
+    }
+
+    .formacion-contenido .desplegable {
+        width: 65px;
+    }    
+    
 }
+@media all and (min-width: 520px) and (max-width: 767px){}
+@media all and  (min-width: 320px) and (max-width: 519px){}
 
 
 
