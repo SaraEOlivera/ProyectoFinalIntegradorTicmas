@@ -403,7 +403,131 @@ footer {
     }
     
 }
-@media all and  (min-width: 320px) and (max-width: 519px){}
+
+@media all and  (min-width: 320px) and (max-width: 519px){
+    body {
+        width: 100%;
+    }
+    
+    header {
+        width: 100%;
+        height: 130px;
+    }
+    
+    .contenedor-header {
+        height: 130px;
+        padding: 1.3rem;
+    }
+    
+    .header-foto img {
+        display: none;
+    }
+    
+    .contenedor-header .header-texto h2 {
+        font-size: 1.5rem;
+    }
+    
+    aside {
+        width: 100%;
+        float: none;
+        border-right: 0px;
+        height: auto;
+    }
+    
+    aside h3 {
+        font-size: 1.3rem;
+        margin-top: 40px;
+    }
+    
+    .contenedor-contacto {
+        padding-bottom: 40px;
+    }
+    
+    .contenedor-contacto p {
+        font-size: 1.2rem;
+    }
+    
+    .contenedor-contacto i {
+        font-size: 1.6rem;
+        padding-right: 10px;
+    }
+
+    .skills h3 {
+        font-size: 1.3rem;
+    }
+    
+    .contenedor-skills {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    
+    .contenedor-skills .progress {
+        margin: 30px;
+        width: 90%;
+
+    }
+    
+    .progress .barra .texto-barra {
+        font-size: 1.2rem;
+    }
+    
+    /* Seccion Formacion */
+    section {
+        width: 100%;
+        float: none;
+        margin: left;
+    }
+    
+    section .titulo-seccion {
+        margin-top: 20px;
+    }
+    
+    section .contenedor{
+        margin: 15px;
+        padding: 10px;
+    }
+    
+    .curso {
+        padding-bottom: 70px;
+    }
+    
+    .subtitulo-seccion{
+        font-size: 1rem;
+        padding: 0px;
+    }
+
+    .img-section {
+        padding-top: 10px;
+        width: 90%;
+    }
+    
+    .formacion-contenido .desplegable {
+        width: 35px;
+        height: 30px;
+    }    
+
+    .formacion-contenido i {
+        font-size: 1rem;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-iconos i{
+        padding: 25px;
+    }
+
+    .footer-texto {
+        font-size: 1.3rem;
+    }
+
+    .flecha-arriba {
+        right: 10px;
+    }
+}
+/* Fin responsive area */
 
 
 
