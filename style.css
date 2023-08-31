@@ -310,7 +310,99 @@ footer {
     }    
     
 }
-@media all and (min-width: 520px) and (max-width: 767px){}
+
+@media all and (min-width: 520px) and (max-width: 767px){    
+    body {
+        width: 100%;
+    }
+    
+    header {
+        width: 100%;
+        height: 130px;
+    }
+    
+    .contenedor-header {
+        height: 130px;
+        padding: 1.3rem;
+    }
+    
+    .header-foto img {
+        display: none;
+    }
+    
+    .contenedor-header .header-texto h2 {
+        font-size: 2rem;
+    }
+    
+    aside {
+        width: 100%;
+        float: none;
+        border-right: 0px;
+        height: auto;
+    }
+    
+    aside h3 {
+        margin-top: 40px;
+    }
+    
+    .contenedor-contacto {
+        padding-bottom: 40px;
+    }
+    
+    .contenedor-contacto p {
+        font-size: 1.5rem;
+    }
+    
+    .contenedor-contacto i {
+        font-size: 1.6rem;
+        padding-right: 10px;
+    }
+    
+    .contenedor-skills {
+        width: 80%;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    
+    .contenedor-skills .progress {
+        margin: 30px;
+    }
+    
+    .progress .barra .texto-barra {
+        font-size: 1.2rem;
+    }
+    
+    /* Seccion Formacion */
+    section {
+        width: 100%;
+        float: none;
+        /* padding: 0 20px; */
+        margin: left;
+    }
+    
+    section .titulo-seccion {
+        margin-top: 40px;
+    }
+    
+    section .contenedor{
+        margin: 15px;
+        padding: 10px;
+    }
+    
+    .curso {
+        padding-bottom: 100px;
+    }
+    
+    .subtitulo-seccion{
+        font-size: 1rem;
+        padding: 2px;
+    }
+    
+    .footer-texto {
+        font-size: 1.4rem;
+    }
+    
+}
 @media all and  (min-width: 320px) and (max-width: 519px){}
 
 
