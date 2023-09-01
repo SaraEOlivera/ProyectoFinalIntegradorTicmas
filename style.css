@@ -207,17 +207,23 @@ footer {
 
 .flecha-arriba {
     position: fixed;
-    bottom: 60px;
+    bottom: 40px;
     right: 70px;
     border: 2px solid #272626;
     border-radius: 100%;
     height: 50px;
     width:60px;
     background-color: #518e7e;
+    transform: translateY(100px);
+    transition: 0.3s;
 }
 
 .flecha-arriba i {
     font-size: 26px;
+}
+
+.flecha-arriba-activo {
+    transform: translateY(0);
 }
 
 
