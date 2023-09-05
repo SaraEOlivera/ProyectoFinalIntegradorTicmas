@@ -16,8 +16,28 @@ const agregar_btn_arriba = () => {
     }
 }
 
+//  modo nocturno
+const colorPreferido = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const boton = document.getElementById('modo');
+
+//variable que setea modo para el usuario
+const setearModo = (theme) => {
+    document.documentElement.setAttribute('info-modo', theme);
+    localStorage.setItem('theme', theme);
+}
+
+// Cambiar el modo
+boton.addEventListener('click', function(){
+    let cambiarModo = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+    setearModo(cambiarModo);
+})
+
+//ver si tiene guardada una preferencia
+setearModo(localStorage.getItem('theme') || colorPreferido);
 
 
-// Algoritmo boton de despliegue
+// boton de despliegue
 
-// Algoritmo modo nocturno
+
+
+

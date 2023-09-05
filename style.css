@@ -5,14 +5,27 @@
 }
 
 html {
-    background-color: #d3d3d317;
     scroll-behavior: smooth;
 }
 
 body {
     width: 1200px;
     margin: auto;
+    background-color: var(--fondo);
 }
+
+[info-modo = "light"] {
+    --fondo: #d9d9d9; 
+    --texto: #1E1E1E;
+    --lamparita: #1E1E1E;
+}
+
+[info-modo = "dark"] {
+    --fondo: #1E1E1E; 
+    --texto: #d9d9d9;
+    --lamparita: #d9d9d9;
+}
+
 
 header {
     width: 100%;
@@ -52,10 +65,11 @@ header {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 3rem;
+    color: var(--texto);
 }
 
 .header-boton {
-    border: 2px solid #272626;
+    border: 2px solid var(--fondo);
     border-radius: 100%;
     width: 45px;
     height: 40px;
@@ -64,24 +78,19 @@ header {
 }
 
 .header-boton i{
-    color: #272626;
+    color: var(--lamparita);
 }
 
 main {
-    height: auto;
-
-}
-
-section {
-    width: 70%;
-    float: right;
+    background-color: var(--fondo);
 }
 
 aside {
     width: 30%;
     float: left;
     border-right: 2px solid #3ba589;
-    height: 2000px;
+    height: 2100px;
+    background-color: var(--fondo);
 }
 
 aside h3, .titulo-seccion {
@@ -89,18 +98,21 @@ aside h3, .titulo-seccion {
     padding: 25px;
     font-size: 2rem;
     font-family: 'Rubik', sans-serif;
+    color: var(--texto);
 }
 
 .contenedor-contacto {
     display: flex;
     flex-direction: column;
     padding-bottom: 30px;
+    background-color: var(--fondo);
 }
 
-.contenedor-contacto p {
+.contenedor-contacto a{
     margin: 10px 30px;
-    font-size: 1.2rem;
-    color: #272626;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--texto);
 }
 
 .contenedor-contacto i {
@@ -116,12 +128,13 @@ aside h3, .titulo-seccion {
     border: 2px solid #3ba589;
     border-radius: 10px;
     padding: 15px;
+    background-color: var(--fondo);
 }
 
 .contenedor-skills .progress {
     margin: 15px;
     height: 25px;
-    background-color: #c6c3c317;
+    background-color: var(--fondo);
 }
 
 .progress .barra {
@@ -137,18 +150,24 @@ aside h3, .titulo-seccion {
 /* Seccion Formacion */
 
 section {
+    width: 70%;
+    height: 2100px;
+    float: right;
     padding: 32px;
     margin: auto;
+    background-color: var(--fondo);
 }
 
 section .titulo-seccion {
     text-align: center;
     font-size: 2rem;
+    color: var(--texto);
 }
 
 section .contenedor{
     margin: 35px;
     padding: 35px;
+    background-color: var(--fondo);
 }
 
 .curso {
@@ -157,6 +176,7 @@ section .contenedor{
 
 .subtitulo-seccion{
     font-size: 1.3rem;
+    color: var(--texto);
 }
 
 .formacion-contenido {
@@ -178,10 +198,6 @@ section .contenedor{
     font-size: 1.2rem;
 }
 
-.img-section {
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-}
 
 footer {
     width: 100%;
