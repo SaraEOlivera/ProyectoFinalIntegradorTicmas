@@ -38,6 +38,18 @@ setearModo(localStorage.getItem('theme') || colorPreferido);
 
 // boton de despliegue
 
+//Arroja Node List
+const botones = document.querySelectorAll("div button.desplegable");
+const imagenes =document.querySelectorAll("div a img.img-seccion");
 
+//Recorrer cada elemento
+
+botones.forEach(button => {
+    button.addEventListener("click", function(){
+        imagenes.forEach(img =>{
+            img.classList.toggle("expuesta");
+        });
+    });
+});
 
 

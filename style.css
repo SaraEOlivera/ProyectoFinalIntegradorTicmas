@@ -198,6 +198,14 @@ section .contenedor{
     font-size: 1.2rem;
 }
 
+.oculta {
+    display: none;
+}
+
+.expuesta {
+    display: block;
+}
+
 
 footer {
     width: 100%;
